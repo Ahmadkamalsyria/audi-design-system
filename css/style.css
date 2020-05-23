@@ -1,93 +1,185 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-*{
-  letter-spacing: -1.5
+html{
+  box-sizing: border-box;
 }
-h1{
-  font-weight: light;
-  font-size: 95px;
-}
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
+body {
+  width:100%;
+  font-family: "Open Sans", sans-serif;
 
-p {
-  line-height: 2rem;
-}
-.show-servecies{
-  padding:70px;
-}
-.sidenav-trigger {
-
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-.parallax{
-  opacity: .2;
-}
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
-.sidebar-item{
-  border-bottom: #26a69a 1px solid
+.header{
+  background: url(../gray.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
-.card-image{
-  height: 100px;
+.navigation{
+ display: flex;
+ align-items: center;
+
+ justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, .5)
 }
-.card-image img{
-  height: 100px;
+.navigation ul li{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
-.card-content{
-  height: 250px;
+.navigation ul li a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding:20px;
+  transition: all ease .5s;
 }
-.page-heading{
-  margin:100px 0 250px 0;
+.navigation ul li a:hover{
+ background-color: #b6b1a9;
+ color: rgba(0, 0, 0, .5);
 }
-h5{
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 0px
+.header .brand{
+  position: absolute;
+  top: 50%;
+  left: 50% ;
+  transform: translate(-50%, -50%);
+  text-align: center
 }
-.overline{
-  font-size: 10px;
-  letter-spacing: 1.5
+.header .brand p{
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: .05em;
+  text-shadow: 
+    2px 2px 0px rgba(178, 10, 48, 0.2), 
+    4px 4px 0px rgba(182, 177, 169, 0.2);
 }
+.header .brand span{
+  font-weight: 300;
+  font-size: 20px;
+
+  letter-spacing: .05em;
+}
+
+
+/*.card{
+  margin: 50px auto;
+  width: 80%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgba(178, 10, 48);
+  padding:0;
+}*/
+.body-content {
+  background: url(../gray.jpg);
+  background-attachment: fixed;
+  display: flex;
+
+	flex-direction: column;
+	min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+
+}
+
+
+.section{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 700px;
+  }
+  
+  .card h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .card h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+  
+  .card-preview {
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: 40px;
+    width: 300px;
+  }
+  
+  .card-preview a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+  .card-info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    padding:40px;
+    height: 130px;
+    color: #777
+  }
+  
+
+  
+  .see-more {
+    background-color: rgba(178, 10, 48);
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 14px;
+    right: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease .8s;
+
+  }
+  .see-more:hover{
+   color: rgba(178, 10, 48);
+    background-color: #b6b1a9;
+  }
+  .footer{
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: #b6b1a9
+  }
+  .divider{
+    text-align: center;
+    padding: 2rem;
+  }
+  .divider p{
+    font-weight: 600;
+  font-size: 30px;
+  letter-spacing: .05em;
+  text-shadow: 
+    2px 2px 0px rgba(178, 10, 48, 0.2), 
+    4px 4px 0px rgba(182, 177, 169, 0.2);
+  }
